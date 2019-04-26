@@ -1,0 +1,84 @@
+
+/* variables */
+:root {
+    --h1: calc(1em + 2vw + 1vh);
+    --h2: calc(1em + 0.7vw + 0.3vh);
+  }
+
+  body{
+      height: 100%;
+  }
+  
+
+/* navigation */
+/* black side bar */
+nav{
+    height: 100%;
+    width: 20%;
+    min-width: 50px;
+
+    background-color: rgba(0,0,0, 0.5);
+
+    color: white;
+    
+    position: absolute;
+    top:0;
+    right:0;
+}
+
+/* nav choices */
+ul{
+    position: sticky;
+    top: 50%;
+}
+
+/* header hero */
+
+header{
+    height: 100vh;
+    min-height: 500px;
+    width: 100%;
+
+    background-color: rgba(115, 115, 115, 1);
+}
+
+/* organizing header container */
+#header-wrapper{
+    background-color: rgba(15, 15, 15, 0.3);
+    height: 100%;
+    width: 50%;
+    min-width: 300px;
+    margin-left: 5%;
+}
+
+#header-text{
+    height: 100%;
+    width: 100%;
+
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    padding-bottom: 4em;
+    padding-left: 2em;
+}
+
+/* header text */
+#header-text h1{
+    padding: 0.2em 0;
+    font-size: var(--h1);
+}
+
+#header-text h2{
+    font-size: var(--h2);
+}
+
+/*************************************************/
+
+/* drawings section */
+main{
+    height: 300vh;
+    min-height: 1200px;
+}
