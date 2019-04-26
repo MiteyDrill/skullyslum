@@ -11,8 +11,8 @@
     <title>Skully's Drawing Art!</title>
 </head>
 <body>
-    <nav>
-        <ul id = "list">
+    <nav id = "list">
+        <ul>
             <li>Home</li>
             <li>Portfolio</li>
             <li>Patreon</li>
@@ -38,7 +38,7 @@
     <main>
         <?php
         for($i = 0; $i < 20; $i++){
-            echo "<img id='img".$i."' alt=".$i." />";
+            echo "<img style='width:".rand(30, 90)."%; height:".rand(40, 80)."%;' id='img".$i."' alt=".$i." />";
         };
         ?>
     </main>
@@ -50,19 +50,17 @@
             <div id='patreon-h2'>
                 <h2>This is a title</h2>
             </div>
-            <div id='patreon-information-container'> 
-                <!-- contains information -->
-                <div id='information-panel'>
-                    <p>Information</p>
-                    <p>Information</p>
-                    <p>Information</p>
-                    <p>Information</p>
-                </div>
 
-                <div id='image-panel'>
-                    <img alt="An artwork piece for patreon"/>
+            <div id='patreon-information-container'> 
+                <div>
+                    <p>Information</p>
+                    <p>Information</p>
+                    <p>Information</p>
+                    <p>Information</p>
                 </div>
+                <img alt='patreon-image'/>
             </div>
+
             <div id='patreon-button'>
                 <button>Patreon</button>
             </div>
